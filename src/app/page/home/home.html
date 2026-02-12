@@ -1,48 +1,54 @@
 <section class="home">
   <div class="home__hero">
-    <h1 class="home__title">Welcome Back</h1>
-    <p class="home__subtitle">Sign in to continue your journey with us.</p>
+    <h1 class="home__title">Welcome to Angular</h1>
+    <p class="home__subtitle">The modern web developer's platform of choice</p>
+    <p class="home__description">Build amazing applications with the power of TypeScript, reactive programming, and a rich ecosystem.</p>
   </div>
 
-  <form class="home__form">
-    <div class="field">
-      <label for="firstName">First name</label>
-      <input id="firstName" type="text" placeholder="Enter your first name" autocomplete="given-name">
+  <div class="home__features">
+    <div class="feature-card">
+      <div class="feature-card__icon">⚡</div>
+      <h3 class="feature-card__title">Lightning Fast</h3>
+      <p class="feature-card__text">Optimized build pipeline and runtime performance with ahead-of-time compilation and tree-shaking.</p>
     </div>
 
-    <div class="field">
-      <label for="lastName">Last name</label>
-      <input id="lastName" type="text" placeholder="Enter your last name" autocomplete="family-name">
+    <div class="feature-card">
+      <div class="feature-card__icon">🎯</div>
+      <h3 class="feature-card__title">TypeScript First</h3>
+      <p class="feature-card__text">Built with TypeScript for superior tooling, type safety, and developer experience.</p>
     </div>
 
-    <div class="field">
-      <label for="birthDate">Birth date</label>
-      <input id="birthDate" type="date" autocomplete="bday">
+    <div class="feature-card">
+      <div class="feature-card__icon">🔄</div>
+      <h3 class="feature-card__title">Reactive Programming</h3>
+      <p class="feature-card__text">RxJS integration for powerful asynchronous data streams and event handling.</p>
     </div>
 
-    <div class="field">
-      <label for="age">Age</label>
-      <input id="age" type="number" placeholder="25" min="1" max="120">
+    <div class="feature-card">
+      <div class="feature-card__icon">📦</div>
+      <h3 class="feature-card__title">Component Based</h3>
+      <p class="feature-card__text">Build reusable, modular components with encapsulated styles and logic.</p>
     </div>
 
-    <div class="field field--full">
-      <label for="email">Email address</label>
-      <input id="email" type="email" placeholder="your@email.com" autocomplete="email">
+    <div class="feature-card">
+      <div class="feature-card__icon">🎨</div>
+      <h3 class="feature-card__title">Modern Templates</h3>
+      <p class="feature-card__text">Intuitive template syntax with built-in directives for control flow and data binding.</p>
     </div>
 
-    <div class="field field--full">
-      <label for="password">Password</label>
-      <input id="password" type="password" placeholder="••••••••" autocomplete="new-password">
+    <div class="feature-card">
+      <div class="feature-card__icon">🛡️</div>
+      <h3 class="feature-card__title">Enterprise Ready</h3>
+      <p class="feature-card__text">Robust architecture, dependency injection, and comprehensive testing tools.</p>
     </div>
+  </div>
 
-    <div class="field field--full field--inline">
-      <input id="terms" type="checkbox">
-      <label for="terms">I agree to the terms and conditions</label>
+  <div class="home__cta">
+    <h2 class="cta__title">Ready to Get Started?</h2>
+    <p class="cta__text">Explore our features and start building your next great application.</p>
+    <div class="cta__buttons">
+      <a class="btn btn--primary" routerLink="/about">Learn More</a>
+      <a class="btn btn--secondary" routerLink="/contact">Contact Us</a>
     </div>
-
-    <div class="home__actions">
-      <button class="btn btn--primary" type="submit">Get Started</button>
-      <button class="btn btn--ghost" type="button">Learn More</button>
-    </div>
-  </form>
+  </div>
 </section>

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 :host {
   display: block;
   min-height: 100vh;
-  background: linear-gradient(135deg, #ec4899 0%, #f97316 100%);
+  background: linear-gradient(180deg, #0d1117 0%, #1b1b1b 100%);
   padding: 48px 20px;
-  font-family: "Space Grotesk", "Segoe UI", Tahoma, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .contact {
@@ -25,7 +25,8 @@
   letter-spacing: 0.15em;
   font-size: 12px;
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.25);
+  color: #dd0031;
+  background: rgba(221, 0, 49, 0.15);
   padding: 6px 16px;
   border-radius: 999px;
   margin-bottom: 12px;
@@ -38,7 +39,7 @@
 
 .contact__subtitle {
   font-size: 16px;
-  opacity: 0.9;
+  color: #b0b0b0;
   margin: 0;
 }
 
@@ -50,10 +51,12 @@
 }
 
 .contact__form {
-  background: #ffffff;
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   padding: 36px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   display: grid;
   gap: 20px;
 }
@@ -71,25 +74,31 @@
 label {
   font-size: 14px;
   font-weight: 600;
-  color: #1f2937;
+  color: #e0e0e0;
 }
 
 input,
 textarea {
-  border-radius: 10px;
-  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 12px 16px;
   font-size: 15px;
-  background: #f9fafb;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
   transition: all 0.2s ease;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #ec4899;
-  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.15);
-  background: #ffffff;
+  border-color: #dd0031;
+  box-shadow: 0 0 0 3px rgba(221, 0, 49, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 textarea {
@@ -114,14 +123,15 @@ textarea {
 }
 
 .btn--primary {
-  background: linear-gradient(135deg, #ec4899 0%, #f97316 100%);
+  background: #dd0031;
   color: #ffffff;
-  box-shadow: 0 10px 24px rgba(236, 72, 153, 0.3);
+  box-shadow: 0 10px 24px rgba(221, 0, 49, 0.3);
 }
 
 .btn--primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(236, 72, 153, 0.4);
+  background: #c3002f;
+  box-shadow: 0 12px 30px rgba(221, 0, 49, 0.5);
 }
 
 .contact__info {
@@ -131,9 +141,10 @@ textarea {
 }
 
 .contact__info-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   padding: 24px;
   text-align: center;
   transition: all 0.3s ease;
@@ -141,7 +152,9 @@ textarea {
 
 .contact__info-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #dd0031;
+  box-shadow: 0 12px 30px rgba(221, 0, 49, 0.3);
 }
 
 .contact__info-icon {
@@ -152,13 +165,13 @@ textarea {
 .contact__info-card h3 {
   font-size: 18px;
   margin: 0 0 8px;
-  color: #1f2937;
+  color: #ffffff;
 }
 
 .contact__info-card p {
   font-size: 15px;
   margin: 0;
-  color: #6b7280;
+  color: #b0b0b0;
 }
 
 @media (max-width: 900px) {
