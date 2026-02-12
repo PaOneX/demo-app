@@ -6,52 +6,67 @@
   </header>
 
   <div class="customer-manage__content">
-    <!-- Add Customer Form -->
     <div class="customer-manage__form-card">
       <h2 class="form-card__title">Add New Customer</h2>
       <form class="form-card__form">
         <div class="field">
           <label for="name">Full Name</label>
-          <input id="name" type="text" placeholder="John Doe" [(ngModel)]="customer.name" name="name">
+          <input
+            id="name"
+            type="text"
+            placeholder="John Doe"
+            [(ngModel)]="customer.name"
+            name="name"
+          />
         </div>
 
         <div class="field">
           <label for="email">Email Address</label>
-          <input id="email" type="email" placeholder="john@example.com" [(ngModel)]="customer.email" name="email">
+          <input
+            id="email"
+            type="email"
+            placeholder="john@example.com"
+            [(ngModel)]="customer.email"
+            name="email"
+          />
         </div>
 
         <div class="field">
           <label for="phone">Phone Number</label>
-          <input id="phone" type="tel" placeholder="+94 77 123 4567" [(ngModel)]="customer.phone" name="phone">
+          <input
+            id="phone"
+            type="tel"
+            placeholder="+94 77 123 4567"
+            [(ngModel)]="customer.phone"
+            name="phone"
+          />
         </div>
 
         <button class="btn btn--primary" type="button" (click)="save()">Add Customer</button>
       </form>
     </div>
 
-    <!-- Current Customer Preview -->
     @if (customer.name || customer.email || customer.phone) {
       <div class="customer-manage__preview">
         <h3 class="preview__title">Current Entry</h3>
         <div class="preview__card">
           <div class="preview__row">
             <span class="preview__label">Name:</span>
-            <span class="preview__value">{{customer.name || '—'}}</span>
+            <span class="preview__value">{{ customer.name || '—' }}</span>
           </div>
           <div class="preview__row">
             <span class="preview__label">Email:</span>
-            <span class="preview__value">{{customer.email || '—'}}</span>
+            <span class="preview__value">{{ customer.email || '—' }}</span>
           </div>
           <div class="preview__row">
             <span class="preview__label">Phone:</span>
-            <span class="preview__value">{{customer.phone || '—'}}</span>
+            <span class="preview__value">{{ customer.phone || '—' }}</span>
           </div>
         </div>
       </div>
     }
   </div>
 
-  <!-- Customer List -->
   @if (customers && customers.length > 0) {
     <div class="customer-manage__list">
       <h2 class="list__title">All Customers</h2>
@@ -59,9 +74,9 @@
         @for (customerObj of customers; track customerObj.email) {
           <div class="customer-card">
             <div class="customer-card__info">
-              <h3 class="customer-card__name">{{customerObj.name}}</h3>
-              <p class="customer-card__email">{{customerObj.email}}</p>
-              <p class="customer-card__phone">{{customerObj.phone}}</p>
+              <h3 class="customer-card__name">{{ customerObj.name }}</h3>
+              <p class="customer-card__email">{{ customerObj.email }}</p>
+              <p class="customer-card__phone">{{ customerObj.phone }}</p>
             </div>
           </div>
         }
