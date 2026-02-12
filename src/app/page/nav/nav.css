@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:host {
+  display: block;
+  font-family: "Space Grotesk", "Segoe UI", Tahoma, sans-serif;
+}
+
+.nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav__logo {
+  font-size: 28px;
+}
+
+.nav__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.nav__links {
+  display: flex;
+  gap: 8px;
+}
+
+.nav__link {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav__link:hover {
+  color: #1f2937;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.nav__link--active {
+  color: #667eea;
+  background: rgba(102, 126, 234, 0.1);
+}
+
+@media (max-width: 640px) {
+  .nav__container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav__links {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .nav__link {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

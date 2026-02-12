@@ -1,0 +1,54 @@
+<section class="profile">
+  <header class="profile__header">
+    <p class="profile__eyebrow">Profile</p>
+    <h1 class="profile__title">Personal Details</h1>
+    <p class="profile__subtitle">Keep your info up to date for a smoother experience.</p>
+  </header>
+
+  <form class="profile__form">
+    <div class="field">
+      <label for="firstName">First name</label>
+      <input id="firstName" type="text" placeholder="Pawan" autocomplete="given-name">
+    </div>
+
+    <div class="field">
+      <label for="lastName">Last name</label>
+      <input id="lastName" type="text" placeholder="Sarathchandra" autocomplete="family-name">
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="pawan@email.com" autocomplete="email">
+    </div>
+
+    <div class="field">
+      <label for="phone">Phone</label>
+      <input id="phone" type="tel" placeholder="+94 77 123 4567" autocomplete="tel">
+    </div>
+
+    <div class="field">
+      <label for="location">Location</label>
+      <input id="location" type="text" placeholder="Colombo, Sri Lanka" autocomplete="address-level2">
+    </div>
+
+    <div class="field">
+      <label for="website">Website</label>
+      <input id="website" type="url" placeholder="https://example.com" autocomplete="url">
+    </div>
+
+    <div class="field field--full">
+      <label for="bio">Bio</label>
+      <textarea id="bio" rows="4" placeholder="Tell us a little about yourself..."></textarea>
+    </div>
+
+    <div class="field field--full field--inline">
+      <input id="newsletter" type="checkbox">
+      <label for="newsletter">Send me product updates and tips.</label>
+    </div>
+
+    <div class="profile__actions">
+      <button class="btn btn--ghost" type="button">Cancel</button>
+      <button class="btn btn--primary" type="submit">Save changes</button>
+    </div>
+  </form>
+</section>

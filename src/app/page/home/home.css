@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 48px 20px;
+  font-family: "Space Grotesk", "Segoe UI", Tahoma, sans-serif;
+}
+
+.home {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.35);
+}
+
+.home__hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.home__title {
+  font-size: clamp(32px, 5vw, 42px);
+  margin: 0 0 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home__subtitle {
+  margin: 0;
+  color: #64748b;
+  font-size: 16px;
+}
+
+.home__form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field--full {
+  grid-column: 1 / -1;
+}
+
+.field--inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+input {
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  padding: 12px 16px;
+  font-size: 15px;
+  background: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+  background: #ffffff;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #667eea;
+}
+
+.home__actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 15px;
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(102, 126, 234, 0.3);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--primary:hover {
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 640px) {
+  .home {
+    padding: 28px;
+  }
+
+  .home__form {
+    grid-template-columns: 1fr;
+  }
+
+  .home__actions {
+    flex-direction: column;
+  }
+}

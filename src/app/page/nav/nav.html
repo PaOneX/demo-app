@@ -1,7 +1,13 @@
-<div>
-    <nav>
-        <a routerLink="home">Home</a>
-        <a routerLink="about">About</a>
-        <a routerLink="contact">Contact</a>
-    </nav>
-</div>
+<nav class="nav">
+  <div class="nav__container">
+    <div class="nav__brand">
+      <span class="nav__title">PaOne</span>
+    </div>
+    <div class="nav__links">
+      <a class="nav__link" routerLink="home" routerLinkActive="nav__link--active">Home</a>
+      <a class="nav__link" routerLink="about" routerLinkActive="nav__link--active">About</a>
+      <a class="nav__link" routerLink="contact" routerLinkActive="nav__link--active">Contact</a>
+      <a class="nav__link" routerLink="profile" routerLinkActive="nav__link--active">Profile</a>
+    </div>
+  </div>
+</nav>

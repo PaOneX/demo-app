@@ -1,1 +1,48 @@
-<p>home works!</p>
+<section class="home">
+  <div class="home__hero">
+    <h1 class="home__title">Welcome Back</h1>
+    <p class="home__subtitle">Sign in to continue your journey with us.</p>
+  </div>
+
+  <form class="home__form">
+    <div class="field">
+      <label for="firstName">First name</label>
+      <input id="firstName" type="text" placeholder="Enter your first name" autocomplete="given-name">
+    </div>
+
+    <div class="field">
+      <label for="lastName">Last name</label>
+      <input id="lastName" type="text" placeholder="Enter your last name" autocomplete="family-name">
+    </div>
+
+    <div class="field">
+      <label for="birthDate">Birth date</label>
+      <input id="birthDate" type="date" autocomplete="bday">
+    </div>
+
+    <div class="field">
+      <label for="age">Age</label>
+      <input id="age" type="number" placeholder="25" min="1" max="120">
+    </div>
+
+    <div class="field field--full">
+      <label for="email">Email address</label>
+      <input id="email" type="email" placeholder="your@email.com" autocomplete="email">
+    </div>
+
+    <div class="field field--full">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="••••••••" autocomplete="new-password">
+    </div>
+
+    <div class="field field--full field--inline">
+      <input id="terms" type="checkbox">
+      <label for="terms">I agree to the terms and conditions</label>
+    </div>
+
+    <div class="home__actions">
+      <button class="btn btn--primary" type="submit">Get Started</button>
+      <button class="btn btn--ghost" type="button">Learn More</button>
+    </div>
+  </form>
+</section>
